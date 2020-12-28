@@ -1,0 +1,14 @@
+name: app-trail-ale
+recipe: laravel
+config:
+  php: 7.4
+  via: nginx
+  webroot: public
+  xdebug: false
+excludes:
+  - node_modules
+
+services:
+  database:
+    type: mysql:8.0
+    portforward: 33060
